@@ -1,0 +1,14 @@
+name: hello-Ali
+on: push
+jobs: 
+  job-001:
+     runs-on: ubuntu-latest
+     steps :
+       - name: step
+         run: echo "Hello World"
+  jobs-002 :  
+     runs-on: ubuntu-latest
+     needs: job-001
+     steps :
+       - name: step2
+         run: echo "Hello Osama"
